@@ -131,7 +131,7 @@ p {
     }
     
     h1 {
-        font-size: 10px;
+        font-size: 30px;
     }
     
     h2 {
@@ -155,22 +155,3 @@ p {
     }
 }
 
-@media only screen and (max-width: 640px) {
-    main {
-        height: 700px;
-        width: auto;
-    }
-
-    /* main img {
-        transform: rotate(90deg);
-        top: 75px;
-    } */
-
-    p {
-        top: 50px;
-    }
-
-    .btn {
-        top: 100px;
-    }
-}
