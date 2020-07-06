@@ -123,9 +123,11 @@ p {
     100% {opacity: 1}
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 768px) {
     main {
         top: 50px;
+        height: 700px;
+        width: auto;
     }
     
     h1 {
@@ -138,6 +140,7 @@ p {
     
     p {
         font-size: 18px;
+        top: 50px;
     }
     
     main img {
@@ -145,6 +148,10 @@ p {
         top: 50px;
         width: 100%;
         height: auto;
+    }
+    
+    .btn {
+        top: 100px;
     }
 }
 
