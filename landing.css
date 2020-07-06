@@ -124,6 +124,10 @@ p {
 }
 
 @media only screen and (max-width: 700px) {
+    main {
+        top: 50px;
+    }
+    
     main img {
         transform: rotate(90deg);
         top: 50px;
@@ -134,7 +138,6 @@ p {
 
 @media only screen and (max-width: 640px) {
     main {
-        top: 50px;
         height: 700px;
         width: auto;
     }
