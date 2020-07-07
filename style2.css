@@ -257,7 +257,7 @@ footer img {
     border: 1px solid #000;
 }
 
-@media only screen and (max-width: 770px) {
+@media only screen and (max-width: 768px) {
     .content {
         grid-template-columns: 1fr;
     }
@@ -269,17 +269,8 @@ footer img {
     footer {
         grid-template-columns: 1fr 1fr;
     }
-}
-
-@media only screen and (max-width: 650px) {
+    
     .contact-info {
-        grid-template-areas: 
-        "p ."
-        "t a"
-        "e .";
-    }
-
-    #text {
-        align-self: center;
+        grid-template: 1fr / 1fr;
     }
 }
