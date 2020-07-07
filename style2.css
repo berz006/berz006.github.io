@@ -271,6 +271,9 @@ footer img {
     }
     
     .contact-info {
-        grid-template: 1fr / 1fr;
+        grid-template-areas:
+        "p ."
+        "t a"
+        "e .";
     }
 }
