@@ -272,8 +272,9 @@ footer img {
     
     .contact-info {
         grid-template-areas:
-        "p ."
-        "t a"
-        "e .";
+        "p"
+        "t"
+        "e"
+        "a";
     }
 }
