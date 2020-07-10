@@ -71,6 +71,7 @@ nav {
     position: absolute;
     color: var(--cgcream);
     background-color: var(--cgred);
+    margin: 1.2rem 2rem;
 /*     top: 50%;
     right: 2rem;
     transform: translateY(-50%); */
