@@ -167,6 +167,10 @@ nav {
     padding: 1em;
 }
 
+.content hr {
+    margin-bottom: 1rem;
+}
+
 .greet, .contact h1 {
     /* font-size: 30px; */
     text-align: center;
@@ -270,6 +274,7 @@ footer {
     justify-items: center;
     background-color: var(--cgred);
     color: var(--cgcream);
+    font-size: 2rem;
     width: 100%;
     border-top: 3px solid var(--maroon);
     border-bottom: 3px solid var(--maroon);
@@ -400,5 +405,9 @@ footer img {
         "t"
         "e"
         "a";
+    }
+
+    footer img {
+        max-height: 6rem;
     }
 }
