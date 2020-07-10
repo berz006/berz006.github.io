@@ -61,6 +61,7 @@ header img {
 }
 
 nav {
+    position: -webkit-sticky;
     position: sticky;
     top: 0px;
 }
@@ -70,9 +71,9 @@ nav {
     position: absolute;
     color: var(--cgcream);
     background-color: var(--cgred);
-    top: 50%;
+/*     top: 50%;
     right: 2rem;
-    transform: translateY(-50%);
+    transform: translateY(-50%); */
     z-index: 1000;
     display: none;
 }
