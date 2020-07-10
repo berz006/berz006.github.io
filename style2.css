@@ -407,6 +407,11 @@ footer img {
         "a";
     }
 
+    footer p {
+        text-align: center;
+        font-size: 1.4rem;
+    }
+
     footer img {
         max-height: 6rem;
     }
