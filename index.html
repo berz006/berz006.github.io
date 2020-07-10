@@ -8,98 +8,119 @@
     <script src="https://kit.fontawesome.com/c4a3172eff.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="container">
-        <header class="image">
+    <div class="wrapper">
+        <header>
             <img src="images/logo01.jpg" alt="Calico Goose Logo">
         </header>
-        <nav id="main-nav">
-            <ul>
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
-                <li>
-                    <a href="#">Store</a>
-                    <ul class="submenu">
-                        <li>
-                            <a href="artwork.html">Finished Artwork</a>
-                        </li>
-                        <li>
-                            <a href="#">Pattern Packets</a>
-                            <ul class="sub-submenu">
-                                <li>
-                                    <a href="newdesigns.html">New Designs</a>
-                                </li>
-                                <li>
-                                    <a href="household.html">Household</a>
-                                </li>
-                                <li>
-                                    <a href="seasonal.html">Seasonal</a>
-                                </li>
-                                <li>
-                                    <a href="fruits.html">Fruits</a>
-                                </li>
-                                <li>
-                                    <a href="christmas.html">Christmas</a>
-                                </li>
-                                <li>
-                                    <a href="florals.html">Florals</a>
-                                </li>
-                                <li>
-                                    <a href="wmsbgpp.html">Colonial<br>Williamsburg</a>
-                                </li>
-                                <li>
-                                    <a href="functional.html">Functional/<br>Decorative</a>
-                                </li>
-                                <li>
-                                    <a href="repros.html">Reproductions</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="surfaces.html">Surfaces</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="classes.html">Classes</a>
-                </li>
-                <li>
-                    <a href="#">Food and Fun</a>
-                    <ul class="submenu">
-                        <li>
-                            <a href="recipes.html">Recipes</a>
-                        </li>
-                        <li>
-                            <a href="wmsbg.html">Williamsburg</a>
-                        </li>
-                        <li>
-                            <a href="garden.html">My Gardens</a>
-                        </li>
-                        <li>
-                            <a href="socialmedia.html">Social Media</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">About Us</a>
-                    <ul class="submenu">
-                        <li>
-                            <a href="about.html">About Barbara</a>
-                        </li>
-                        <li>
-                            <a href="news.html">In the News!</a>
-                        </li>
-                        <li>
-                            <a href="cert.html">Certifications<br>and Awards</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="contact.html">Contact</a>
-                </li>
-            </ul>
-            <a href="#"><i class="fas fa-shopping-cart"></i></a>
-        </nav>
+        <div class="container">
+            <nav>
+                <!-- <div class="menu-icons">
+                    <i id="menu-open" class="fas fa-bars"></i>
+                    <i id="menu-close" class="fas fa-times"></i>
+                </div> -->
+                <input type="checkbox" id="nav-toggle" class="nav-toggle" autocomplete="off">
+                <label for="nav-toggle" class="nav-toggle-label">
+                    <span>
+                        <i id="menu-open" class="fas fa-bars"></i>
+                    </span>
+                </label>
+                <ul class="nav-list">
+                    <li class="main-menu">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="main-menu">
+                        <!-- <a href="#">Store</a> -->
+                        <input type="checkbox" id="store" class="menu-toggle" autocomplete="off">
+                        <label for="store" class="menu-toggle-label top-label">Store</label>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="artwork.html">Finished Artwork</a>
+                            </li>
+                            <li>
+                                <!-- <a href="#">Pattern Packets</a> -->
+                                <input type="checkbox" id="p-packets" class="menu-toggle" autocomplete="off">
+                                <label for="p-packets" class="menu-toggle-label sub-label">Pattern Packets</label>
+                                <ul class="sub-menu sub-menu-p">
+                                    <li>
+                                        <a class="sub-a" href="newdesigns.html">New Designs</a>
+                                    </li>
+                                    <li>
+                                        <a class="sub-a" href="household.html">Household</a>
+                                    </li>
+                                    <li>
+                                        <a class="sub-a" href="seasonal.html">Seasonal</a>
+                                    </li>
+                                    <li>
+                                        <a class="sub-a" href="fruits.html">Fruits</a>
+                                    </li>
+                                    <li>
+                                        <a class="sub-a" href="christmas.html">Christmas</a>
+                                    </li>
+                                    <li>
+                                        <a class="sub-a" href="florals.html">Florals</a>
+                                    </li>
+                                    <li>
+                                        <a class="sub-a" href="wmsbgpp.html">Colonial Williamsburg</a>
+                                    </li>
+                                    <li>
+                                        <a class="sub-a" href="functional.html">Functional/ Decorative</a>
+                                    </li>
+                                    <li>
+                                        <a class="sub-a" id="last" href="repros.html">Reproductions</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a class="last" href="surfaces.html">Surfaces</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="classes.html">Classes</a>
+                    </li>
+                    <li>
+                        <!-- <a href="#">Food and Fun</a> -->
+                        <input type="checkbox" id="fnf" class="menu-toggle" autocomplete="off">
+                        <label for="fnf" class="menu-toggle-label top-label">Food and Fun</label>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="recipes.html">Recipes</a>
+                            </li>
+                            <li>
+                                <a href="wmsbg.html">Williamsburg</a>
+                            </li>
+                            <li>
+                                <a href="garden.html">My Gardens</a>
+                            </li>
+                            <li>
+                                <a class="last" href="socialmedia.html">Social Media</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <!-- <a href="#">About Us</a> -->
+                        <input type="checkbox" id="about" class="menu-toggle" autocomplete="off">
+                        <label for="about" class="menu-toggle-label top-label">About Us</label>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="about.html">About Barbara</a>
+                            </li>
+                            <li>
+                                <a href="news.html">In the News!</a>
+                            </li>
+                            <li>
+                                <a class="last" href="cert.html">Certifications and Awards</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                    <li class="move-right shop">
+                        <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+                    </li>
+                </ul>
+            </nav>
         <section class="greet">
             <h1 style="font-size: 50px;"><span><img src="images/pine.png"></span>&nbspWelcome&nbsp<span><img src="images/pine.png"></span></h1>
                 <p>In Colonial Williamsburg, a checkerboard signpost outside of an establishment 
