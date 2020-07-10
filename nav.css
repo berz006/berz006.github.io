@@ -71,10 +71,7 @@ nav {
     position: absolute;
     color: var(--cgcream);
     background-color: var(--cgred);
-    margin: 1.2rem 2rem;
-/*     top: 50%;
-    right: 2rem;
-    transform: translateY(-50%); */
+    margin: .6rem 1.2rem;
     z-index: 1000;
     display: none;
 }
@@ -163,6 +160,7 @@ nav {
 }
 
 @media screen and (min-width: 851px) {
+    
     .sub-label {
         display: inline-block;
         padding: 1.5rem 1.5rem;
@@ -178,6 +176,10 @@ nav {
 }
 
 @media screen and (max-width: 850px) {
+
+    nav {
+        height: 4rem;
+    }
 
     .nav-list {
         position: absolute;
