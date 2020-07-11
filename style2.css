@@ -167,13 +167,18 @@ nav {
     padding: 1em;
 }
 
-.content hr {
+/* .content hr {
     margin-bottom: 1rem;
+} */
+
+hr {
+    margin: 1rem 0;
 }
 
 .greet, .contact h1 {
     /* font-size: 30px; */
     text-align: center;
+    margin-bottom: 1rem;
 }
 
 .greet p, .contact p {
@@ -240,9 +245,9 @@ nav {
     display: grid;
     grid-gap: 1em;
     grid-template-areas:
-        "p t e"
-        ". a .";
-    justify-items: center;
+        "e p"
+        "a t";
+    justify-items: grid-start;
 }
 
 #email {
@@ -258,12 +263,77 @@ nav {
 }
 
 #address {
-    text-align: center;
+    /* text-align: center; */
     grid-area: a;
 }
 
 #address ul li {
     color: var(--cgred)
+}
+
+.contact h2 {
+    padding: 0 .5rem;
+}
+
+.contact-form {
+    margin: 1.5rem;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.contact-form fieldset {
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.contact-form fieldset legend {
+    padding: .5rem;
+    border: 1px solid #999;
+}
+
+#legh2 {
+    margin: 0 auto;
+}
+
+.contact-form input {
+    border: 2px solid var(--cgred);
+    border-radius: 5px;
+    padding: .7rem 1rem;
+    margin: .5rem;
+    width: 22rem;
+}
+
+.contact-form input:focus {
+    background-color: var(--cgcream);
+}
+
+#state {
+    width: 13.5rem;
+}
+
+#zip {
+    width: 7rem;
+    -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.contact-form textarea {
+    width: 22rem;
+    border: 2px solid var(--cgred);
+    border-radius: 5px;
+    margin: .5rem;
+    padding: .5rem;
+    resize: none;
+}
+
+.contact-form textarea:focus {
+    background-color: var(--cgcream);
+    width: 60%;
 }
 
 footer {
@@ -405,6 +475,19 @@ footer img {
         "t"
         "e"
         "a";
+    }
+
+    .contact-form {
+        margin: 0;
+        text-align: center;
+    }
+
+    #state {
+        width: 13rem;
+    }
+
+    .contact-form textarea:focus {
+        width: 22rem;
     }
 
     footer p {
