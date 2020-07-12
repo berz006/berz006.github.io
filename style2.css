@@ -24,8 +24,8 @@ html {
 
 body {
     background-color: var(--maroon);
-    padding: 0;
-    margin: 0;
+    /* padding: 0;
+    margin: 0; */
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -46,9 +46,9 @@ nav ul {
 .wrapper {
     width: 95%;
     max-width: 130rem;
-    display: flex;
-    flex-direction: column;
-    margin: auto;
+    /* display: flex;
+    flex-direction: column; */
+    margin: 0 auto;
 }
 
 header img {
@@ -58,7 +58,7 @@ header img {
 
 .container {
     width: 100%;
-    max-width: 130rem;
+    /* max-width: 130rem; */
     margin: 0 auto;
 }
 
@@ -165,6 +165,7 @@ nav {
     background-image: url(images/background.gif);
     font-size: 2rem;
     padding: 1em;
+    margin: 0;
 }
 
 /* .content hr {
@@ -175,7 +176,7 @@ hr {
     margin: 1rem 0;
 }
 
-.greet, .contact h1 {
+.greet h1, .contact h1 {
     /* font-size: 30px; */
     text-align: center;
     margin-bottom: 1rem;
@@ -190,19 +191,39 @@ hr {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 1em;
+    width: 100%;
+    height: auto;
 }
 
-.content img {
+/* .content img {
     margin-left: .5rem;
     float: right;
     max-width: 25rem;
     height: auto;
     border: 1px solid #000;
+} */
+
+.content-box {
+    display: grid;
+    grid-template-columns: 8fr 5fr;
+    grid-gap: 1rem;
 }
 
-.bible {
-    display: flex;
-    flex-direction: row;
+.content-box p {
+    order: 1;
+}
+
+.content-box img {
+    order: 2;
+    /* margin: 0 1rem; */
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #000;
+}
+
+.content-box div {
+    order: 2;
+    /* margin: 0 1rem; */
 }
 
 .content .classes-grid {
@@ -276,9 +297,8 @@ hr {
 }
 
 .contact-form {
-    margin: 1.5rem;
     width: 75%;
-    margin: 0 auto;
+    margin: 1.5rem auto;
 }
 
 .contact-form fieldset {
@@ -303,6 +323,10 @@ hr {
     width: 22rem;
 }
 
+.contact-form input[type=submit] {
+    font-family: caslon-antique;
+}
+
 .contact-form input:focus {
     background-color: var(--cgcream);
 }
@@ -313,13 +337,6 @@ hr {
 
 #zip {
     width: 7rem;
-    -moz-appearance: textfield;
-}
-
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
 }
 
 .contact-form textarea {
@@ -459,6 +476,22 @@ footer img {
 
     .content {
         grid-template-columns: 1fr;
+    }
+
+    .content-box {
+        grid-template-columns: 1fr;
+    }
+
+    .content-box p {
+        order: 2;
+    }
+
+    .content-box img {
+        order: 1;
+    }
+
+    .content-box div {
+        order: 1;
     }
 
     .content .classes-grid {
