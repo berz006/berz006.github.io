@@ -458,7 +458,8 @@ footer img {
     }
 
     .sub-menu .sub-menu-p {
-        width: 95%;
+        width: 100%;
+        border-left: 3px solid var(--cgcream);
         margin: auto;
     }
 
