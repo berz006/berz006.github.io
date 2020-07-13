@@ -304,11 +304,33 @@ hr {
 .contact-form fieldset {
     padding: 2rem;
     margin-bottom: 1.5rem;
+    border-radius: 1rem;
 }
 
 .contact-form fieldset legend {
     padding: .5rem;
     border: 1px solid #999;
+    border-radius: 1rem;
+}
+
+#mailing {
+    display: flex;
+    margin: auto;
+    flex-direction: row;
+}
+
+#req {
+    flex: 2;
+    display: flex;
+    place-items: center;
+}
+
+#comments {
+    flex: 3;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
 }
 
 #legh2 {
@@ -317,14 +339,24 @@ hr {
 
 .contact-form input {
     border: 2px solid var(--cgred);
-    border-radius: 5px;
+    border-radius: .5rem;
     padding: .7rem 1rem;
     margin: .5rem;
     width: 22rem;
 }
 
 .contact-form input[type=submit] {
+    padding: .5rem;
     font-family: caslon-antique;
+    font-size: 1.6rem;
+    background-color: #eee;
+    width: 10rem;
+    display: block;
+    margin: 1rem auto;
+}
+
+.contact-form input[type=submit]:hover {
+    background-color: #ccc;
 }
 
 .contact-form input:focus {
@@ -339,8 +371,9 @@ hr {
     width: 7rem;
 }
 
-.contact-form textarea {
-    width: 22rem;
+#message {
+    width: 75%;
+    height: 20rem;
     border: 2px solid var(--cgred);
     border-radius: 5px;
     margin: .5rem;
@@ -350,7 +383,6 @@ hr {
 
 .contact-form textarea:focus {
     background-color: var(--cgcream);
-    width: 60%;
 }
 
 footer {
@@ -515,13 +547,21 @@ footer img {
         text-align: center;
     }
 
+    #mailing {
+        flex-direction: column;
+    }
+
+    #comments {
+        width: 28rem;
+    }
+
     #state {
         width: 13rem;
     }
 
-    .contact-form textarea:focus {
+    /* .contact-form textarea:focus {
         width: 22rem;
-    }
+    } */
 
     footer p {
         text-align: center;

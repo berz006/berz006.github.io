@@ -149,29 +149,32 @@
                 
                 <div class="contact-form">
                     <form action="/">
-                        <fieldset>
+                        <!-- <fieldset style="display: grid; grid-template-columns: 2fr 3fr;"> -->
+                        <fieldset id="mailing">
                             <legend id="legh2"><h2>Join our mailing list!</h2></legend>
-                            <fieldset>
-                                <legend>Required</legend>
-                                <label for="name">Name:</label><br>
-                                <input type="text" id="name" required><br>
-                                <label for="street">Street:</label><br>
-                                <input type="text" id="street" required><br>
-                                <label for="city">City:</label><br>
-                                <input type="text" id="city" required><br>
-                                <label for="state">State/</label>
-                                <label for="zip">Zip:</label><br>
-                                <input type="text" id="state" required>
-                                <input type="text" id="zip" minlength="5" maxlength="5" pattern="\d*" required><br>
-                                <label for="email">Email:</label><br>
-                                <input type="email" id="email" required><br>
+                            <div id="req">
+                                <fieldset>
+                                    <legend>Required</legend>
+                                    <label for="name">Name:</label><br>
+                                    <input type="text" id="name" required><br>
+                                    <label for="street">Street:</label><br>
+                                    <input type="text" id="street" required><br>
+                                    <label for="city">City:</label><br>
+                                    <input type="text" id="city" required><br>
+                                    <label for="state">State /</label>
+                                    <label for="zip">Zip:</label><br>
+                                    <input type="text" id="state" required>
+                                    <input type="text" id="zip" minlength="5" maxlength="5" pattern="\d*" required><br>
+                                    <label for="email">Email:</label><br>
+                                    <input type="email" id="email" required>
+                                </fieldset>
+                            </div>
+                            <div id="comments">
+                                    <label for="message">Comments:</label><br>
+                                    <textarea name="message" id="message"></textarea><br>
+                                </div>
                             </fieldset>
-                            <label for="phone">Phone:</label><br>
-                            <input type="tel" id="phone"><br>
-                            <label for="message">Comments:</label><br>
-                            <textarea name="message" id="message" cols="30" rows="10"></textarea><br>
                             <input type="submit" value="Submit">
-                        </fieldset>
                     </form>
                 </div>
             </div>
