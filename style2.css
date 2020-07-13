@@ -299,6 +299,7 @@ hr {
 .contact-form {
     width: 75%;
     margin: 1.5rem auto;
+    place-items: center;
 }
 
 .contact-form fieldset {
@@ -314,6 +315,7 @@ hr {
 }
 
 #mailing {
+    width: 100%;
     display: flex;
     margin: auto;
     flex-direction: row;
@@ -530,10 +532,6 @@ footer img {
         grid-template-columns: 1fr 1fr;
     }
 
-    footer {
-        grid-template-columns: 1fr 1fr;
-    }
-    
     .contact-info {
         grid-template-areas:
         "p"
@@ -543,12 +541,14 @@ footer img {
     }
 
     .contact-form {
-        margin: 0;
-        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+        /* text-align: center; */
     }
 
     #mailing {
         flex-direction: column;
+        place-items: center;
     }
 
     #comments {
@@ -558,10 +558,10 @@ footer img {
     #state {
         width: 13rem;
     }
-
-    /* .contact-form textarea:focus {
-        width: 22rem;
-    } */
+    
+    footer {
+        grid-template-columns: 1fr 1fr;
+    }
 
     footer p {
         text-align: center;
