@@ -159,6 +159,7 @@ nav {
 .sub-menu .sub-menu {
     top: -6.1rem;
     left: 100%;
+    z-index: 100;
 }
 
 .move-right {
@@ -171,10 +172,6 @@ nav {
     padding: 1em;
     margin: 0;
 }
-
-/* .content hr {
-    margin-bottom: 1rem;
-} */
 
 hr {
     margin: 1rem 0;
@@ -257,6 +254,66 @@ hr {
     font-size: 1.5rem;
 }
 
+#desktop {
+    text-align: center;
+}
+
+#mobile {
+    display: none;
+}
+
+.sales-item {
+    display: grid;
+    grid-template-columns: 2fr 3fr 1fr;
+    border: 1px solid #000;
+}
+
+.p {
+    display: flex;
+    border-right: 1px solid #000;
+}
+
+.sales-item p {
+    margin: auto;
+}
+
+.check {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.a {
+    display: flex;
+    border-right: 1px solid #000;
+    padding: 1rem;
+}
+
+.thumb {
+    position: relative;
+    margin: auto;
+}
+
+.thumb .sml {
+    max-width: 12rem;
+}
+
+.thumb .big {
+    max-width: 24rem;
+}
+
+.thumb span {
+    position: absolute;
+    visibility: hidden;
+}
+
+.thumb:hover span {
+    transform: translateY(-25%);
+    left: 50%;
+    height: auto;
+    visibility: visible;
+}
+
 .contact a {
     text-decoration: none;
     color: var(--cgred);
@@ -288,7 +345,6 @@ hr {
 }
 
 #address {
-    /* text-align: center; */
     grid-area: a;
 }
 
@@ -615,6 +671,15 @@ footer img {
         width: 100%;
         margin: 0 auto;
         /* text-align: center; */
+    }
+
+    #desktop {
+        display: none;
+    }
+
+    #mobile {
+        display: block;
+        text-align: center;
     }
 
     #mailing {
