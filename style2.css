@@ -293,7 +293,8 @@ hr {
 }
 
 .check input {
-    margin: auto;
+    /* margin: auto; */
+    align-self: center;
 }
 
 .sales-item .a {
@@ -636,6 +637,11 @@ footer img {
 
     .content {
         grid-template-columns: 1fr;
+    }
+
+    .content img {
+        max-width: 100%;
+        margin: auto;
     }
 
     .content-box {
