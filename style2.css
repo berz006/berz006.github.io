@@ -552,6 +552,10 @@ footer img {
 
 @media screen and (max-width: 850px) {
 
+    body {
+        margin-top: .5rem;
+    }
+
     nav {
         height: 4rem;
     }
