@@ -28,6 +28,10 @@ body {
     margin: 0; */
 }
 
+p {
+    margin-bottom: 1rem;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-weight: lighter;
 }
@@ -239,7 +243,7 @@ hr {
     max-width: 100%;
 }
 
-.content input[type=submit] {
+/* .content input[type=submit] {
     padding: 5px;
     background-color: #bebbbb;
     font-family: caslon-antique;
@@ -249,7 +253,7 @@ hr {
 
 .content input[type=submit]:hover {
     background-color: #9b9999;
-}
+} */
 
 .content label {
     font-size: 1.5rem;
@@ -288,6 +292,10 @@ hr {
     text-align: center;
 }
 
+.check input {
+    margin: auto;
+}
+
 .sales-item .a {
     display: flex;
     border-right: 1px solid #000;
@@ -312,7 +320,7 @@ hr {
     display: none;
 }
 
-.contact a {
+.contact a, .content a {
     text-decoration: none;
     color: var(--cgred);
 }
@@ -405,17 +413,19 @@ hr {
     width: 22rem;
 }
 
-.contact-form input[type=submit] {
+input[type=submit] {
+    border: 2px solid var(--cgred);
+    border-radius: .5rem;
     padding: .5rem;
     font-family: caslon-antique;
     font-size: 1.6rem;
     background-color: #eee;
-    width: 10rem;
+    width: fit-content;
     display: block;
     margin: 1rem auto;
 }
 
-.contact-form input[type=submit]:hover {
+input[type=submit]:hover {
     background-color: #ccc;
 }
 
