@@ -35,7 +35,7 @@ main img {
     max-width: 700px;
     width: 100%;
     height: auto;
-    opacity: 0.05;
+    opacity: 0.2;
     border-radius: 25px;
     /* background-color: rgba(128, 128, 128, .1); */
 }
