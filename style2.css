@@ -280,6 +280,7 @@ hr {
     display: grid;
     grid-template-columns: 2fr 3fr 1fr;
     border: 1px solid #000;
+    background-color: rgba(0, 0, 0, .1);
 }
 
 .p {
@@ -303,7 +304,6 @@ hr {
 }
 
 .check input {
-    /* margin: auto; */
     align-self: center;
 }
 

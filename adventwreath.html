@@ -14,10 +14,6 @@
         </header>
         <div class="container">
             <nav>
-                <!-- <div class="menu-icons">
-                    <i id="menu-open" class="fas fa-bars"></i>
-                    <i id="menu-close" class="fas fa-times"></i>
-                </div> -->
                 <input type="checkbox" id="nav-toggle" class="nav-toggle" autocomplete="off">
                 <label for="nav-toggle" class="nav-toggle-label">
                     <span>
@@ -29,7 +25,6 @@
                         <a href="index.html">Home</a>
                     </li>
                     <li class="main-menu">
-                        <!-- <a href="#">Store</a> -->
                         <input type="checkbox" id="store" class="menu-toggle" autocomplete="off">
                         <label for="store" class="menu-toggle-label top-label">Store</label>
                         <ul class="sub-menu">
@@ -37,7 +32,6 @@
                                 <a href="artwork.html">Finished Artwork</a>
                             </li>
                             <li>
-                                <!-- <a href="#">Pattern Packets</a> -->
                                 <input type="checkbox" id="p-packets" class="menu-toggle" autocomplete="off">
                                 <label id="pp" for="p-packets" class="menu-toggle-label sub-label">Pattern Packets</label>
                                 <ul class="sub-menu sub-menu-p">
@@ -79,7 +73,6 @@
                         <a href="classes.html">Classes</a>
                     </li>
                     <li>
-                        <!-- <a href="#">Food and Fun</a> -->
                         <input type="checkbox" id="fnf" class="menu-toggle" autocomplete="off">
                         <label for="fnf" class="menu-toggle-label top-label">Food and Fun</label>
                         <ul class="sub-menu">
@@ -98,7 +91,6 @@
                         </ul>
                     </li>
                     <li>
-                        <!-- <a href="#">About Us</a> -->
                         <input type="checkbox" id="about" class="menu-toggle" autocomplete="off">
                         <label for="about" class="menu-toggle-label top-label">About</label>
                         <ul class="sub-menu">
@@ -121,54 +113,33 @@
                     </li>
                 </ul>
             </nav>
+            <!-- insert content here -->
             <div class="greet">
-                <h1>Handpainted Finished Artwork For Sale</h1>
-                <hr/>
-            </div>
-            <div class="greet">
-                <h5 id="desktop">Hover mouse over image to enlarge. Click for full size and description</h5>
-                <h5 id="mobile">Click image for full size and description</h5>
-                <form action="/">
-                    <div class="content" style="grid-gap: .3rem;">
-                        <div class="sales-item">
-                            <div class="a">
-                                <a href="apple_pan.html" class="thumb"><img src="images/artwork/ApplePan_sml.jpg" alt="" class="sml"><span><img src="images/artwork/ApplePan_sml.jpg" alt="" class="big"></span></a>
-                            </div>
-                            <div class="p">
-                                <p>Hand-crafted tin apple pan $85</p>
-                            </div>
-                            <div class="check">
-                                <label for="apple_pan">Select</label>
-                                <input type="checkbox" name="apple_pan" id="apple_pan">
-                            </div>
-                        </div>
-                        <div class="sales-item">
-                            <div class="a">
-                                <a href="bears_and_pears.html" class="thumb"><img src="images/artwork/BearsAndPears_sml.jpg" alt="" class="sml"><span><img src="images/artwork/BearsAndPears_sml.jpg" alt="" class="big"></span></a>
-                            </div>
-                            <div class="p">
-                                <p>Bears and Pears $175</p>
-                            </div>
-                            <div class="check">
-                                <label for="bears_n_pears">Select</label>
-                                <input type="checkbox" name="bears_n_pears" id="bears_n_pears">
-                            </div>
-                        </div>
-                        <div class="sales-item">
-                            <div class="a">
-                                <a href="berlin_canister.html" class="thumb"><img src="images/artwork/BerlinCanister_Main_sml.jpg" alt="" class="sml"><span><img src="images/artwork/BerlinCanister_Main_sml.jpg" alt="" class="big"></span></a>
-                            </div>
-                            <div class="p">
-                                <p>Berlin Tea Canister $65</p>
-                            </div>
-                            <div class="check">
-                                <label for="berlin">Select</label>
-                                <input type="checkbox" name="berlin" id="berlin">
-                            </div>
+                <h1>Advent Wreath</h1>
+                <div class="content">
+                    <img src="images/packets/AdventWreath_lrg.jpg" alt="Advent Wreath">
+                    <div>
+                        <p>
+                            Painted with the colors of advent--purple and pink--this Advent wreath will help you count down the weeks until Christmas. 
+                        </p>
+                        <p>
+                            Intermediate
+                        </p>
+                        <p>
+                            3 photos 
+                        </p>
+                        <div class="packet-form">
+                            <form action="/">
+                                <label for="submit">Packet $8.5</label>
+                                <input type="submit" value="Add to cart">
+                            </form>
+                            <form action="/">
+                                <label for="submit">E-packet $6.5</label>
+                                <input type="submit" value="Add to cart">
+                            </form>
                         </div>
                     </div>
-                    <input type="submit" value="Add items to cart" class="btn">
-                </form>
+                </div>
             </div>
         </div>
         <footer class="main-footer">
