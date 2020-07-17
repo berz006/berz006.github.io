@@ -347,13 +347,15 @@ hr {
 }
 
 .photos {
-    /* max-width: 130rem; */
     display: grid;
     grid-gap: .5rem;
     grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
     grid-auto-rows: 8rem;
     grid-auto-flow: dense;
-    /* place-items: center; */
+}
+
+.greet h5 {
+    text-align: center;
 }
 
 .horiz {
@@ -377,23 +379,10 @@ hr {
 }
 
 .photos img {
-    /* max-height: 10rem;
-    margin: 0;
-    padding: 0; */
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
-
-/* .horiz img, .vert img {
-    height: 18rem;
-    width: auto;
-}
-
-.tall img, .wide img {
-    height: 38rem;
-    width: auto;
-} */
 
 .contact a, .content a {
     text-decoration: none;
