@@ -36,6 +36,10 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: lighter;
 }
 
+iframe {
+    max-width: 100%;
+}
+
 nav a {
     text-decoration: none;
     color: var(--cgcream);
@@ -274,6 +278,18 @@ hr {
 
 #mobile {
     display: none;
+}
+
+#facebook-mob {
+    display: none;
+}
+
+#facebook-5se {
+    display: none;
+}
+
+#youtube {
+    padding-top: 6rem;
 }
 
 .sales-item {
@@ -761,6 +777,10 @@ footer img {
         grid-column: span 3;
     }
 
+    #youtube {
+        padding-top: 0;
+    }
+
     .about-box1 {
         border: none;
     }
@@ -826,5 +846,30 @@ footer img {
 
     footer img {
         max-height: 6rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    
+    #facebook-desk {
+        display: none;
+    }
+
+    #facebook-mob {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    #facebook-desk {
+        display: none;
+    }
+
+    #facebook-mob {
+        display: none;
+    }
+
+    #facebook-5se {
+        display: block;
     }
 }
